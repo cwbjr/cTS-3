@@ -15,7 +15,7 @@ app.get("/:id", (req, res) => {
         }
     }
     if(!student.students[i]) {
-        res.status = 404;
+        res.status(404);
         res.json({error: {message: "No record found!"}
         });
     }
