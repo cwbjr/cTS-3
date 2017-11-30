@@ -22,5 +22,4 @@ app.get("/:id", (req, res) => {
 });
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log("TS-3 Version-3 on localhost:3000");
 });
