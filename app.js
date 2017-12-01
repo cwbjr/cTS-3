@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 app.get("/:id", (req, res) => {
     for (var i = 0; i < student.students.length; i++) {
         if (student.students[i].id == req.params.id) {
-            return res.json(student.students[i]);
+            return res.json({data: student.students[i]});
         }
     }
     if(!student.students[i]) {
